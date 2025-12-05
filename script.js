@@ -44,8 +44,9 @@ const statusEl = document.getElementById('form-status');
 if (form && statusEl) {
   form.addEventListener('submit', e => {
     e.preventDefault();
-    statusEl.textContent =
-      'Enquiry captured on this page – a backend can be connected to send it to your email.';
+    statusEl.textContent = 'Thank you — your message has been submitted.';
+statusEl.style.color = '#16a34a'; // 显示绿色文字更有完成感
+
   });
 }
 
